@@ -23,7 +23,7 @@ for numGuesses in range(0,6):
         break
 
 if int(playerGuess) == randomNumber:
-    print("Congrats, you guessed the right number!")
+    print("Congrats, " + playerName + " you guessed the right number!")
 else:
     print("Sorry, the correct number was: " + str(randomNumber))
     
