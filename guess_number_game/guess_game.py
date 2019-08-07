@@ -1,9 +1,11 @@
+#! /usr/bin/env python3
+
 # Game to guess a number that is randomly generated between 0 and 20
 # Player has 6 tries before the player loses
 import random
 print("Hello, what is your name?")
 playerName = input()
-print("Hello, " + playerName + " can you guess which number I am thinking of between 0 and 20?")
+print("Hello, " + playerName + " ,can you guess which number I am thinking of between 0 and 20?")
 print("Be careful, you will only have 6 tries to get the right answer!")
 randomNumber = random.randint(0,20)
 
@@ -23,7 +25,7 @@ for numGuesses in range(0,6):
         break
 
 if int(playerGuess) == randomNumber:
-    print("Congrats, " + playerName + " you guessed the right number!")
+    print("Congrats, " + playerName + " ,you guessed the right number!")
 else:
     print("Sorry, the correct number was: " + str(randomNumber))
     
